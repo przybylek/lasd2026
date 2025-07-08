@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image'
 const Navigation = () => (
   <Navbar sticky='top' bg='white' className='shadow-sm' expand='xl'>
     <Navbar.Brand href='#home'><Image src='/ACM_logo.svg' alt='ACM Logo' /></Navbar.Brand>
-    <Navbar.Brand href='#home'>LASD@SAC'24</Navbar.Brand>
+    <Navbar.Brand href='#home'>LASD@SAC'26</Navbar.Brand>
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
       <Nav className="ml-auto">
