@@ -7,6 +7,7 @@ import Motivation from '../sections/Motivation'
 import PastConferences from '../sections/PastConferences'
 import Topics from '../sections/Topics'
 import Submissions from '../sections/Submissions'
+import SRC from '../sections/SRC'
 import ImportantDates from '../sections/ImportantDates'
 import Chairs from '../sections/Chairs'
 import Committee from '../sections/Committee'
@@ -30,6 +31,7 @@ export default function Home({ chairs, committee, reviewers }) {
       <Motivation />
       <Topics />
       <Submissions />
+      <SRC />
       <ImportantDates />
       <Program />
       <Chairs people={chairs} />
