@@ -15,12 +15,8 @@ const Program = () => (
                     <th className="py-3">
                         {/* Flexbox rozrzucający elementy na lewo i prawo */}
                         <div className="d-flex justify-content-between align-items-center">
-                            <span className="badge bg-white text-primary border">
-                                Room: <strong>Orion</strong>
-                            </span>
-                            <span className="badge bg-white text-success border">
-                                Chair: <strong>Aleksander Jarzebowicz</strong>
-                            </span>
+                            <span>Room: <strong>Orion</strong></span>
+                            <span>Chair: <strong>Aleksander Jarzebowicz</strong></span>
                         </div>
                     </th>
                 </tr>
@@ -76,12 +72,8 @@ const Program = () => (
                     <th className="py-3">
                         {/* Flexbox rozrzucający elementy na lewo i prawo */}
                         <div className="d-flex justify-content-between align-items-center">
-                            <span className="badge bg-white text-primary border">
-                                Room: <strong>Lobby</strong>
-                            </span>
-                            <span className="badge bg-white text-success border">
-                                Chair: <strong>Ya-Shu Chen</strong>
-                            </span>
+                            <span>Room: <strong>Lobby</strong></span>
+                            <span>Chair: <strong>Ya-Shu Chen</strong></span>
                         </div>
                     </th>
                 </tr>
