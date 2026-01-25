@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
-import Badge from 'react-bootstrap/Badge'; // Importujemy Badge
 
 const Program = () => (
     <Container className="bg-white section p-4 my-5 rounded shadow-sm">
@@ -12,18 +11,11 @@ const Program = () => (
             <tbody>
                 {/* --- Dzień 1 --- */}
                 <tr className='table-primary border-primary'>
-                    <th className="text-nowrap text-center align-middle py-3" style={{ width: '15%' }}>Tue., March 24</th>
+                    {/* Tutaj dodano text-nowrap, aby data się nie łamała */}
+                    <th className="text-nowrap text-center py-3" style={{ width: '15%' }}>Tue., March 24</th>
                     <th className="py-3">
-                        {/* Wiersz 1: Pokój */}
-                        <div className="mb-2">
-                            <Badge bg="primary" className="me-2" style={{ width: '60px' }}>ROOM</Badge>
-                            <span className="fw-bold">Orion</span>
-                        </div>
-                        {/* Wiersz 2: Przewodniczący */}
-                        <div>
-                            <Badge bg="secondary" className="me-2" style={{ width: '60px' }}>CHAIR</Badge>
-                            <em className="fw-bold">Aleksander Jarzebowicz</em>
-                        </div>
+                        <span className="badge bg-white text-primary border me-2">Room: <strong>Orion</strong></span>
+                        <span className="badge bg-white text-success border">Chair: <strong>Aleksander Jarzębowicz</strong></span>
                     </th>
                 </tr>
                 
@@ -74,18 +66,10 @@ const Program = () => (
 
                 {/* --- Dzień 2 --- */}
                 <tr className='table-primary border-primary'>
-                    <th className="text-nowrap text-center align-middle py-3">Wed., March 25</th>
+                    <th className="text-nowrap text-center py-3">Wed., March 25</th>
                     <th className="py-3">
-                         {/* Wiersz 1: Pokój */}
-                         <div className="mb-2">
-                            <Badge bg="primary" className="me-2" style={{ width: '60px' }}>ROOM</Badge>
-                            <span className="fw-bold">Lobby</span>
-                        </div>
-                        {/* Wiersz 2: Przewodniczący */}
-                        <div>
-                            <Badge bg="secondary" className="me-2" style={{ width: '60px' }}>CHAIR</Badge>
-                            <em className="fw-bold">Ya-Shu Chen</em>
-                        </div>
+                        <span className="badge bg-white text-primary border me-2">Room: <strong>Lobby</strong></span>
+                        <span className="badge bg-white text-success border">Chair: <strong>Ya-Shu Chen</strong></span>
                     </th>
                 </tr>
                 
