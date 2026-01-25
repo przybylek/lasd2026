@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 import React from 'react'
 import Clock from 'react-live-clock'
 
-
+/*
 const Program = () => (
     <Container className="bg-white section p-4 my-5 rounded">
       <a className='target' id='program'/>
@@ -15,13 +15,10 @@ const Program = () => (
           TBA...
       </p>
     </Container>
-
-
-
 )
+*/
 
 
-/*
 const Program = () => (
     <Container className="bg-white section p-4 my-5 rounded">
     <a className='target' id='program'/>
@@ -32,32 +29,22 @@ const Program = () => (
     <Table bordered className="mt-5">
       <tbody>	
 
-        <tr className='text-center table-primary'><th>Mon., August 26th</th><th>Session I (Room C-21); chaired by <em>Tomas Gustavsson</em></th></tr>
-        <tr><td className='text-nowrap'>13:40 - 14:00</td><td>Unlocking Feedback in Remote Retrospectives: Games, Anonymity, and Continuous Reflection in Action (<em>Yen Ying Ng, Bartosz Leśniewski, Krzysztof Marek, Michael Neumann and Jacek Trzesicki</em>)</td></tr>
-        <tr><td className='text-nowrap'>14:00 - 14:20</td><td>On the Business Analyst's Responsibilities in an Agile Software Project - a Multi-Method Study (<em>Mateusz Kwiatkowski and Aleksander Jarzebowicz</em>)</td></tr>
-        <tr><td className='text-nowrap'>14:20 - 14:40</td><td>Waste and Its Elimination in Software Development Projects in Europe (<em>Piotr Sycz and Elzbieta Wojnicka-Sycz</em>)</td></tr>
-        <tr><td className='text-nowrap'>14:40 - 15:00</td><td>Impact of Work from Home on Agile Software Project Execution – the Empirical Study (<em>Jakub Chabik</em>)</td></tr>
+        <tr className='text-center table-primary'><th>Tue., March 24</th><th>Room: Orion; chair: <em>Aleksander Jarzebowicz</em></th></tr>
+        <tr><td className='text-nowrap'>16:00 - 16:05</td><td>Track opening (<em>Adam Przybylek</em>)</td></tr>
+        <tr><td className='text-nowrap'>16:05 - 16:25</td><td>Onboarding newcomers in Large-scale Agile projects (<em>Pavithra Herath, Muhammad Ovais Ahmad and Tomas Gustavsson</em>)</td></tr>
+        <tr><td className='text-nowrap'>16:25 - 16:45</td><td>Combining Textual Embeddings and Graph Neural Networks for Agile Software Effort Estimation (<em>Carlos Bitencourt, Marcelo Augusto Santos Turine, Vanessa Araujo Borges and Bruno Nogueira</em>)</td></tr>
+        <tr><td className='text-nowrap'>16:45 - 17:05</td><td>Supporting Agility at Scale Through an Organization-wide Software Engineering Community of Practice: Insights from a Large Software Development Organization (<em>Franziska Tobisch, Klaus Häuptle and Florian Matthes</em>)</td></tr>
+        <tr><td className='text-nowrap'>17:05 - 17:25</td><td>A Framework of Critical Success Factors for Agile Software Development (<em>Ridewaan Hanslo and Maureen Tanner</em>)</td></tr>
 
         <tr><th className='text-center table-secondary' colSpan={2}></th></tr>
-        <tr className='text-center table-primary'><th>Mon., August 26th</th><th>Poster Exhibit (Hallway - 0 floor)</th></tr>
-        <tr><td className='text-nowrap' rowSpan={2}>11:00 - 11:40<br />15:00 - 15:40</td><td>Social Sustainability and Large-Scale Agile Software Development (<em>Muhammad Ovais Ahmad and Tomas Gustavsson</em>)</td></tr>
-        <tr><td>Leveraging Generative AI Tools for UX Design in Lean and Agile Projects (<em>Marcin Sikorski</em>)</td></tr>
-
-        <tr><th className='text-center table-secondary' colSpan={2}></th></tr>
-        <tr className='text-center table-primary'><th>Tus., August 27th</th><th>Session II (Room C-21); chaired by <em>Emilio Insfran</em></th></tr>
-        <tr><td className='text-nowrap'>11:40 - 12:00</td><td>Development of a Measurement Instrument for Process Debt Detection in Agile Software Development Organizations (<em>Tomas Gustavsson, Muhammad Ovais Ahmad and Hina Saeeda</em>)</td></tr>
-        <tr><td className='text-nowrap'>12:00 - 12:20</td><td>Assessment of the relevance of best practices in the development of medical R&D projects based on machine learning (<em>	
-Jan Cychnerski and Tomasz Dziubich</em>)</td></tr>
-        <tr><td className='text-nowrap'>12:20 - 12:40</td><td>Process Management as a Foundation for Integrating Agility and Discipline in Information Systems Development – A Study of Practices (<em>Jerzy Auksztol</em>)</td></tr>
-
-
-
+        <tr className='text-center table-primary'><th>Wed., March 25</th><th>Room: Lobby; chair: <em>Ya-Shu Chen</em></th></tr>
+        <tr><td className='text-nowrap'>15:00 - 17:00</td><td>Leveraging Automated Risk Identification in Scrum with a k-NN Recommender System (<em>Ademar França De Sousa Neto, Danyllo Albuquerque, Emanuel Filho, Felipe Ramos, Luiz Antônio, Salatiel Dantas Silva, Ramon Santos, Mirko Perkusich, Hyggo Almeida and Angelo Perkusich</em>)</td></tr>
 
       </tbody>
     </Table>
   </Container>
 )
-*/
+
 
 export default Program
 
