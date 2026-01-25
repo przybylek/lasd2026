@@ -11,16 +11,22 @@ const Program = () => (
             <tbody>
                 {/* --- Dzień 1 --- */}
                 <tr className='table-primary border-primary'>
-                    {/* Tutaj dodano text-nowrap, aby data się nie łamała */}
+
                     <th className="text-nowrap text-center py-3" style={{ width: '15%' }}>Tue., March 24</th>
-                    <th className="py-3">Room: Orion; chair: <em>Aleksander Jarzebowicz</em></th>
+                    <th className="py-3">
+			    <div className="d-flex align-items-center gap-3">
+    				    <span><i className="bi bi-geo-alt-fill text-danger"></i> Room: <strong>Orion</strong></span>
+   				    <span className="text-muted">|</span>
+				    <span><i className="bi bi-person-fill text-primary"></i> Chair: <em>Aleksander Jarzębowicz</em></span>
+			    </div>
+		    </th>
                 </tr>
                 
                 <tr>
                     <td className='text-nowrap fw-bold text-center text-secondary'>16:00 - 16:05</td>
                     <td>
                         <div className="fw-bold">Track opening</div>
-                        <div className="text-muted small fst-italic">Adam Przybylek</div>
+                        <div className="text-muted small fst-italic">Adam Przybyłek</div>
                     </td>
                 </tr>
                 
@@ -64,7 +70,14 @@ const Program = () => (
                 {/* --- Dzień 2 --- */}
                 <tr className='table-primary border-primary'>
                     <th className="text-nowrap text-center py-3">Wed., March 25</th>
-                    <th className="py-3">Room: Lobby; chair: <em>Ya-Shu Chen</em></th>
+                    <th className="py-3">
+			    <div className="d-flex align-items-center gap-3">
+    				    <span><i className="bi bi-geo-alt-fill text-danger"></i> Room: <strong>Lobby</strong></span>
+   				    <span className="text-muted">|</span>
+				    <span><i className="bi bi-person-fill text-primary"></i> Chair: <em>Ya-Shu Chen</em></span>
+			    </div>
+		    </th>
+
                 </tr>
                 
                 <tr>
