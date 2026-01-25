@@ -11,11 +11,17 @@ const Program = () => (
             <tbody>
                 {/* --- Dzień 1 --- */}
                 <tr className='table-primary border-primary'>
-                    {/* Tutaj dodano text-nowrap, aby data się nie łamała */}
                     <th className="text-nowrap text-center py-3" style={{ width: '15%' }}>Tue., March 24</th>
                     <th className="py-3">
-                        <span className="badge bg-white text-primary border me-2">Room: <strong>Orion</strong></span>
-                        <span className="badge bg-white text-success border">Chair: <strong>Aleksander Jarzębowicz</strong></span>
+                        {/* Flexbox rozrzucający elementy na lewo i prawo */}
+                        <div className="d-flex justify-content-between align-items-center">
+                            <span className="badge bg-white text-primary border">
+                                Room: <strong>Orion</strong>
+                            </span>
+                            <span className="badge bg-white text-success border">
+                                Chair: <strong>Aleksander Jarzebowicz</strong>
+                            </span>
+                        </div>
                     </th>
                 </tr>
                 
@@ -68,8 +74,15 @@ const Program = () => (
                 <tr className='table-primary border-primary'>
                     <th className="text-nowrap text-center py-3">Wed., March 25</th>
                     <th className="py-3">
-                        <span className="badge bg-white text-primary border me-2">Room: <strong>Lobby</strong></span>
-                        <span className="badge bg-white text-success border">Chair: <strong>Ya-Shu Chen</strong></span>
+                        {/* Flexbox rozrzucający elementy na lewo i prawo */}
+                        <div className="d-flex justify-content-between align-items-center">
+                            <span className="badge bg-white text-primary border">
+                                Room: <strong>Lobby</strong>
+                            </span>
+                            <span className="badge bg-white text-success border">
+                                Chair: <strong>Ya-Shu Chen</strong>
+                            </span>
+                        </div>
                     </th>
                 </tr>
                 
