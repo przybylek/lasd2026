@@ -2,6 +2,33 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 
+const SessionHeader = ({ room, chair }) => (
+    <div className="d-flex flex-wrap align-items-center gap-2 gap-md-3">
+        {/* Sekcja Pokoju */}
+        <div className="d-flex align-items-center">
+            <span className="text-uppercase small opacity-75 me-2" style={{ letterSpacing: '0.5px', fontSize: '0.75rem' }}>
+                Room:
+            </span>
+            <span className="fw-bold fs-6">
+                {room}
+            </span>
+        </div>
+
+        {/* Separator pionowy (widoczny od md w górę) */}
+        <div className="d-none d-md-block border-start border-dark opacity-25 mx-1" style={{ height: '1.2em' }}></div>
+
+        {/* Sekcja Przewodniczącego */}
+        <div className="d-flex align-items-center">
+            <span className="text-uppercase small opacity-75 me-2" style={{ letterSpacing: '0.5px', fontSize: '0.75rem' }}>
+                Chair:
+            </span>
+            <span className="fw-bold fst-italic">
+                {chair}
+            </span>
+        </div>
+    </div>
+);
+
 const Program = () => (
     <Container className="bg-white section p-4 my-5 rounded shadow-sm">
         <a className='target' id='program' />
@@ -11,22 +38,17 @@ const Program = () => (
             <tbody>
                 {/* --- Dzień 1 --- */}
                 <tr className='table-primary border-primary'>
-
                     <th className="text-nowrap text-center py-3" style={{ width: '15%' }}>Tue., March 24</th>
                     <th className="py-3">
-			    <div className="d-flex align-items-center gap-3">
-    				    <span><i className="bi bi-geo-alt-fill text-danger"></i> Room: <strong>Orion</strong></span>
-   				    <span className="text-muted">|</span>
-				    <span><i className="bi bi-person-fill text-primary"></i> Chair: <em>Aleksander Jarzębowicz</em></span>
-			    </div>
-		    </th>
+                        <SessionHeader room="Orion" chair="Aleksander Jarzebowicz" />
+                    </th>
                 </tr>
                 
                 <tr>
                     <td className='text-nowrap fw-bold text-center text-secondary'>16:00 - 16:05</td>
                     <td>
                         <div className="fw-bold">Track opening</div>
-                        <div className="text-muted small fst-italic">Adam Przybyłek</div>
+                        <div className="text-muted small fst-italic">Adam Przybylek</div>
                     </td>
                 </tr>
                 
@@ -71,13 +93,8 @@ const Program = () => (
                 <tr className='table-primary border-primary'>
                     <th className="text-nowrap text-center py-3">Wed., March 25</th>
                     <th className="py-3">
-			    <div className="d-flex align-items-center gap-3">
-    				    <span><i className="bi bi-geo-alt-fill text-danger"></i> Room: <strong>Lobby</strong></span>
-   				    <span className="text-muted">|</span>
-				    <span><i className="bi bi-person-fill text-primary"></i> Chair: <em>Ya-Shu Chen</em></span>
-			    </div>
-		    </th>
-
+                        <SessionHeader room="Lobby" chair="Ya-Shu Chen" />
+                    </th>
                 </tr>
                 
                 <tr>
