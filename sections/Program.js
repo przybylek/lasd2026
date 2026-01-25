@@ -1,33 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
-
-const SessionHeader = ({ room, chair }) => (
-    <div className="d-flex flex-wrap align-items-center gap-2 gap-md-3">
-        {/* Sekcja Pokoju */}
-        <div className="d-flex align-items-center">
-            <span className="text-uppercase small opacity-75 me-2" style={{ letterSpacing: '0.5px', fontSize: '0.75rem' }}>
-                Room:
-            </span>
-            <span className="fw-bold fs-6">
-                {room}
-            </span>
-        </div>
-
-        {/* Separator pionowy (widoczny od md w górę) */}
-        <div className="d-none d-md-block border-start border-dark opacity-25 mx-1" style={{ height: '1.2em' }}></div>
-
-        {/* Sekcja Przewodniczącego */}
-        <div className="d-flex align-items-center">
-            <span className="text-uppercase small opacity-75 me-2" style={{ letterSpacing: '0.5px', fontSize: '0.75rem' }}>
-                Chair:
-            </span>
-            <span className="fw-bold fst-italic">
-                {chair}
-            </span>
-        </div>
-    </div>
-);
+import Badge from 'react-bootstrap/Badge'; // Importujemy Badge
 
 const Program = () => (
     <Container className="bg-white section p-4 my-5 rounded shadow-sm">
@@ -38,9 +12,18 @@ const Program = () => (
             <tbody>
                 {/* --- Dzień 1 --- */}
                 <tr className='table-primary border-primary'>
-                    <th className="text-nowrap text-center py-3" style={{ width: '15%' }}>Tue., March 24</th>
+                    <th className="text-nowrap text-center align-middle py-3" style={{ width: '15%' }}>Tue., March 24</th>
                     <th className="py-3">
-                        <SessionHeader room="Orion" chair="Aleksander Jarzebowicz" />
+                        {/* Wiersz 1: Pokój */}
+                        <div className="mb-2">
+                            <Badge bg="primary" className="me-2" style={{ width: '60px' }}>ROOM</Badge>
+                            <span className="fw-bold">Orion</span>
+                        </div>
+                        {/* Wiersz 2: Przewodniczący */}
+                        <div>
+                            <Badge bg="secondary" className="me-2" style={{ width: '60px' }}>CHAIR</Badge>
+                            <em className="fw-bold">Aleksander Jarzebowicz</em>
+                        </div>
                     </th>
                 </tr>
                 
@@ -91,9 +74,18 @@ const Program = () => (
 
                 {/* --- Dzień 2 --- */}
                 <tr className='table-primary border-primary'>
-                    <th className="text-nowrap text-center py-3">Wed., March 25</th>
+                    <th className="text-nowrap text-center align-middle py-3">Wed., March 25</th>
                     <th className="py-3">
-                        <SessionHeader room="Lobby" chair="Ya-Shu Chen" />
+                         {/* Wiersz 1: Pokój */}
+                         <div className="mb-2">
+                            <Badge bg="primary" className="me-2" style={{ width: '60px' }}>ROOM</Badge>
+                            <span className="fw-bold">Lobby</span>
+                        </div>
+                        {/* Wiersz 2: Przewodniczący */}
+                        <div>
+                            <Badge bg="secondary" className="me-2" style={{ width: '60px' }}>CHAIR</Badge>
+                            <em className="fw-bold">Ya-Shu Chen</em>
+                        </div>
                     </th>
                 </tr>
                 
