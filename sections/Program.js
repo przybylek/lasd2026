@@ -50,6 +50,7 @@ const Program = () => (
                     <td>
                         <div className="fw-bold">Supporting Agility at Scale Through an Organization-wide Software Engineering Community of Practice: Insights from a Large Software Development Organization</div>
                         <div className="text-muted small fst-italic">Franziska Tobisch, Klaus Häuptle and Florian Matthes</div>
+			<span className='badge bg-warning text-dark mt-1'>🏆 SAC'26 Best Paper Award</span>
                     </td>
                 </tr>
                 
